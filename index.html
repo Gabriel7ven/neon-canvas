@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body onload="startGame()">
+
+        <canvas id="canvas"></canvas>
+        
+        <div class="button-container">
+            <button onclick="toggleToRect()">RECT</button>
+            <button onclick="toggleToCircle()">CIRCLE</button>
+            <button onclick="toggleToTriangle()">TRIANGLE</button>
+            <button id="play-pause" onclick="togglePlayPause()">PAUSE</button>
+        </div>
+        <!-- <div class="welcome">
+            <h1>Welcome To The Rain!</h1>
+        </div> -->
+        <script src="main.js"></script>
+    </body>
+</html>
