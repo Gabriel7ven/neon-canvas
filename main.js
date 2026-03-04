@@ -40,5 +40,13 @@ window.toggleShape = toggleShape;
 window.togglePlayPause = togglePlayPause;
 
 document.addEventListener("DOMContentLoaded", function() {
+    const btnRect = document.getElementById("btn-rect");
+    const btnCircle = document.getElementById("btn-circle");
+    const btnTriangle = document.getElementById("btn-triangle");
+
+    btnRect.addEventListener("click", () => toggleShape("rect"));
+    btnCircle.addEventListener("click", () => toggleShape("circle"));
+    btnTriangle.addEventListener("click", () => toggleShape("triangle"));
+    
     startGame();
 });
